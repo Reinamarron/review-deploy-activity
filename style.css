@@ -122,6 +122,8 @@ text-align: center;
   padding: 0.5em;
   color: white;
 }
+
+
 .parent{
   display: flex;
 }
@@ -188,7 +190,8 @@ text-align: center;
   text-align: center;
   position:relative;
   right:180px;
-  top:280px;
-  
+  top:280px; 
 }
+
+
 
