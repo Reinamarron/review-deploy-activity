@@ -3,57 +3,59 @@ body {
 }
 
 h1 {
-  text-align:center;
+  text-align: center;
   font-size: 330%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
   font-weight: 100;
   font-size: 200%;
 }
 
 h2 {
-  margin:2%;
+  margin: 2%;
 }
 
 h3 {
-  padding:2em;
+  padding: 2em;
 }
 
-h4{
+h4 {
   font-weight: 5;
   font-size: 2em;
-  margin:0%;
+  margin: 0%;
 }
 
 h5 {
   text-align: center;
 }
-.code{
+.code {
   text-align: center;
-  flex-direction:row;
+  flex-direction: row;
   padding-bottom: 10px;
-  display:flex;
-  justify-content:space-around;
-  justify-content:center;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .code-1 {
-  
 }
-.code-2{
-
+.code-2 {
 }
-.code-3{
+.code-3 {
   text-align: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
-.container{
-  display:flex;
-  display:inline-block
+.container {
+  display: flex;
+  /* display: inline-block */
+  /* ----> No need for this since you have display flex.-----< */
   flex-wrap: nowrap;
   justify-content: space-around;
   text-align: center;
@@ -61,26 +63,27 @@ h5 {
 }
 
 .container > div > img {
-  width:100px;
+  width: 100px;
   height: 100px;
 }
 
-.dates{
-  display:flex;
+.dates {
+  display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content:center;
-  align-items:center;
-  height:40%;
-  width:100%;
+  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
+  /* ---->Was listed twice---< */
+  height: 40%;
+  width: 100%;
   text-align: center;
-  padding-inline: 2%;
+  /* padding: 5em:  */
+  /* ----->Doesn't assist with giving space in between, best to possibly use grid here.----< */
 }
 
-
-.pique{
+.pique {
   text-align: center;
-  padding:2em;
+  padding: 2em;
 }
 nav {
   display: flex;
@@ -97,8 +100,8 @@ nav li {
   text-decoration: underline;
 }
 
-.kenzie{
-text-align: center;
+.kenzie {
+  text-align: center;
 }
 
 .submit-button {
@@ -123,25 +126,20 @@ text-align: center;
   color: white;
 }
 
-
-.parent{
+.parent {
   display: flex;
 }
 
-
-
-.paper-img{
-  width:20%;
-  
-
+.paper-img {
+  width: 20%;
 }
-.pique{
+.pique {
   text-align: center;
 }
-.iframe{
+.iframe {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .btn-submit {
@@ -154,44 +152,38 @@ text-align: center;
   color: white;
   font-size: medium;
 
-.aid{
-    justify-content: center; 
+  .aid {
+    /* This is acting up due to a class that isn't listed in your html file. */
+    justify-content: center;
     display: grid;
-    flex-direction:row;
-}
+    flex-direction: row;
+  }
 
+  .small {
+    text-align: center;
+  }
 
-.small {
-  text-align: center;
-}
-
-
-.par1 {
-  text-align:center;
-  display: flex;
-  background-image: center;
-  padding:2em;
-  text-align: center;
-  font-weight: 100%;
-  font-size: 200%;
-}
-
-
-  
+  .par1 {
+    text-align: center;
+    display: flex;
+    background-image: center;
+    padding: 2em;
+    text-align: center;
+    font-weight: 100%;
+    font-size: 200%;
+  }
 }
 
 .btn-submit {
   background-color: white;
-  color:purple;
+  color: purple;
 }
 
-.pique{
- 
+.pique {
   text-align: center;
-  position:relative;
-  right:180px;
-  top:280px; 
+  position: relative;
+  right: 180px;
+  top: 280px;
 }
 
-
-
+/* Don't forget to add your media queries for your desktop/tablet views. */
